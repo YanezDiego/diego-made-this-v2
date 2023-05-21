@@ -42,7 +42,7 @@ const NavBar = () => {
           </div>
         </nav>
         {isOpen ? (
-          <div className='navbar-menu relative z-50 lg:right-0 lg:flex lg:justify-normal'>
+          <div className={`navbar-menu relative z-50 lg:right-0 lg:flex lg:justify-normal`}>
             <div className='navbar-backdrop fixed inset-0 bg-gray-800 opacity-25'></div>
             <nav className='fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-full py-6 px-6 bg-white border-l overflow-y-auto'>
             {/* <div className="navbar-menu relative z-50 lg:right-0 lg:flex lg:justify-end">
@@ -81,7 +81,7 @@ const NavBar = () => {
                       className='block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded'
                       href='#'
                     >
-                      About Us
+                      About Me
                     </a>
                   </li>
                   <li className='mb-1'>
