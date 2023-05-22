@@ -11,11 +11,11 @@ const NavBar = () => {
     return (
       <>
         <nav>
-          <div className='max-w-auto mx-auto px-4 sm:px-8 lg:px-8 shadow-sm '>
+          <div className='max-w-auto mx-auto p-3 sm:px-8 lg:px-8 lg:py-4 shadow-sm '>
             <div className='flex justify-between h-16'>
               <div className='flex-shrink-0 flex items-center'>
                 {/* Logo */}
-                <img className='h-8 lg:h-14 w-auto' src='./DY.png' alt='Logo' />
+                <img className='h-8 md:h-10 lg:h-14 w-auto' src='./DY.png' alt='Logo' />
               </div>
               <div className='hamburger-menu flex items-center'>
                 {/* Hamburger Menu */}
