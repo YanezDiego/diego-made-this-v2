@@ -11,13 +11,13 @@ const NavBar = () => {
     return (
       <>
         <nav>
-          <div className='max-w-auto mx-auto px-4 sm:px-6 lg:px-8 shadow-sm '>
+          <div className='max-w-auto mx-auto px-4 sm:px-8 lg:px-8 shadow-sm '>
             <div className='flex justify-between h-16'>
               <div className='flex-shrink-0 flex items-center'>
                 {/* Logo */}
-                <img className='h-8 w-auto' src='./DY.png' alt='Logo' />
+                <img className='h-8 lg:h-14 w-auto' src='./DY.png' alt='Logo' />
               </div>
-              <div className='flex items-center'>
+              <div className='hamburger-menu flex items-center'>
                 {/* Hamburger Menu */}
                 <button
                   type='button'
@@ -26,8 +26,8 @@ const NavBar = () => {
                 >
                   <title>menu button</title>
                   <svg
-                    className='h-6 w-6 fill-none stroke-current '
-                    viewBox='0 0 24 24'
+                   className='h-6 w-6 lg:h-8 lg:w-8 fill-none stroke-current'
+                   viewBox='0 0 24 24'
                   >
                     <path
                       strokeLinecap='round'
