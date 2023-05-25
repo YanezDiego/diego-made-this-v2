@@ -1,6 +1,6 @@
 const Home = () => {
     return (
-      <div>
+      
         <div className='flex items-start justify-center min-h-screen p-4 md:p-6 lg:p-16'>
           <div className='container mx-auto'>
             <div className='flex flex-col items-center text-center'>
@@ -22,7 +22,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      
     );
 
 }
