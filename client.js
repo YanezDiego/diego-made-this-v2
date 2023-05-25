@@ -1,14 +1,14 @@
 import {createClient} from '@sanity/client'
-import {process} from 'dotenv'
+
 
 export const client = createClient({
-  projectId: process.env.React_APP_PROJECT_ID,
-  dataset: process.env.REACT_APP_DATASET,
-  useCdn: true,
-  apiVersion: "2023-05-01",
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  dataset: import.meta.env.VITE_DATASET,
+  useCdn: false, // set to `false` to bypass the edge cache
+  
 });
 
-export async function getResumeList(){
-    const resumeList = await client.fetch('*[_type === resume]');
-    return resumeList;
-}
+// export const getResumeList = async () => {
+//    const resumeList = await client.fetch('*[_type == "resume"]')
+//     return resumeList;
+// }
