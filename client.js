@@ -10,4 +10,5 @@ export const client = createClient({
 
 export async function getResumeList(){
     const resumeList = await client.fetch('*[_type === resume]');
+    return resumeList;
 }
