@@ -1,4 +1,21 @@
+import {useEffect ,useState } from "react";
+import { client } from "../../client";
+
+
 const Home = () => {
+  const [jobList, setJobList] = useState(null);
+  
+  useEffect(() => {  
+    
+    client.fetch(`*[_type == "resume"]`)
+    .then((data) => setJobList(data))
+    .catch(console.error);
+    
+  },[])
+
+
+  
+
     return (
       
         <div className='flex items-start justify-center min-h-screen p-4 md:p-6 lg:p-16'>
