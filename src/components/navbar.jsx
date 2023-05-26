@@ -18,7 +18,7 @@ const NavBar = () => {
                 <img
                   className='h-8 md:h-10 lg:h-14 w-auto'
                   src='./DY.png'
-                  alt='Logo'
+                  alt='It is an image of diego logo. it is the initials of his name.'
                 />
               </div>
               <div className='hamburger-menu flex items-center'>
