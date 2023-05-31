@@ -84,20 +84,21 @@ const NavBar = () => {
                     </NavLink>
                   </li>
                   <li className='mb-1'>
-                    <a
+                    <NavLink
+                      to='/about'
                       className='block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded'
-                      href='#'
+                      
                     >
                       About Me
-                    </a>
+                    </NavLink>
                   </li>
                   <li className='mb-1'>
-                    <a
+                    <NavLink
+                      to='/contact'
                       className='block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded'
-                      href='#'
                     >
                       Contact
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </div>
