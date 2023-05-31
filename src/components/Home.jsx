@@ -1,15 +1,29 @@
 import { useEffect, useState } from "react";
-import { client } from "../../client";
+//import { client } from "../../client";
 import ResumeList from "./ResumeListContainer";
-
+import resume from "../../data/resume.json";
 const Home = () => {
   const [jobList, setJobList] = useState(null);
 
   useEffect(() => {
-    client
-      .fetch(`*[_type == "resume"] | order(startDate desc)`)
-      .then((data) => setJobList(data))
-      .catch(console.error);
+    // client
+    //   .fetch(
+    //     `*[_type == "resume"]{
+    //      _id,
+    //     employer,
+    //     isCurrent,
+    //     startDate,
+    //     endDate,
+    //    position,
+    //   companyDescription,
+    //   "slug": slug.current,
+    //   "achievements":achievements[].children[].text
+    //   } | order(startDate desc)`
+    //   )
+    //   .then((data) => setJobList(data))
+    //   .catch(console.error);
+
+    setJobList(resume);
   }, []);
 
   return (
@@ -22,7 +36,7 @@ const Home = () => {
                 Hello! <br /> My name is Diego
               </h1>
             </div>
-            <div className='intro font-light text-gray-600 text-lg md:text-xl lg:text-2xl'>
+            <div className='intro font-light text-grey-00 text-lg md:text-xl lg:text-2xl'>
               <p>
                 I am an{" "}
                 <span className='underline'>
@@ -35,19 +49,17 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <div className='flex flex-col md:flex-row lg:flex-row items-center  p-4 md:p-6 lg:p-16 '> */}
-      <div className='container mx-auto text-lg md:text-xl lg:text-2xl'>
-        <h2 className='text-center'>Past Experiences</h2>
-        <div className=''>
-          <div className='flex flex-col md:flex-row lg:flex-row items-center gap-3 p-4 md:p-6 lg:p-16'>
-            {jobList &&
-              jobList.map((job, index) => (
-                <ResumeList jobInfo={job} key={index} />
-              ))}
-          </div>
+
+      <div className=' mx-auto text-xl md:text-6xl lg:text-6xl'>
+        <h2 className='text-center font-medium'>Past Experiences</h2>
+
+        <div className='flex flex-col md:flex-row lg:flex-row  gap-3 p-4 lg:p-8'>
+          {jobList &&
+            jobList.map((job, index) => (
+              <ResumeList jobInfo={job} key={index} />
+            ))}
         </div>
       </div>
-      {/* </div> */}
     </>
   );
 };
