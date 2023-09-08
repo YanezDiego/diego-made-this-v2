@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
@@ -7,6 +7,21 @@ const NavBar = () => {
     const onMenuClickHandler = () => {
         setIsOpen(!isOpen);
     }
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if(isOpen && event.target.closest(".navbar-menu")){
+        setIsOpen(false);
+        }
+    };
+
+    document.addEventListener("click", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    }
+
+  },[isOpen]);
 
     return (
       <>
@@ -50,7 +65,7 @@ const NavBar = () => {
             className={`navbar-menu relative z-50 lg:right-0 lg:flex lg:justify-normal`}
           >
             <div className='navbar-backdrop fixed inset-0 bg-gray-800 opacity-25'></div>
-            <nav className='fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-full py-6 px-6 bg-white border-l overflow-y-auto'>
+            <nav className='fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-l overflow-y-auto'>
               {/* <div className="navbar-menu relative z-50 lg:right-0 lg:flex lg:justify-end">
             <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
             <nav className="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-l overflow-y-auto"> */}
