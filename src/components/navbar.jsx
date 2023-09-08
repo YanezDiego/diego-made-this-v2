@@ -93,7 +93,7 @@ const NavBar = () => {
                     <NavLink
                       to='/'
                       exact
-                      className='block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded'
+                      className='block p-4 text-base font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded'
                     >
                       Home
                     </NavLink>
@@ -101,7 +101,7 @@ const NavBar = () => {
                   <li className='mb-1'>
                     <NavLink
                       to='/about'
-                      className='block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded'
+                      className='block p-4 text-base font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded'
                       
                     >
                       About Me
@@ -110,7 +110,7 @@ const NavBar = () => {
                   <li className='mb-1'>
                     <NavLink
                       to='/contact'
-                      className='block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded'
+                      className='block p-4 text-base font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded'
                     >
                       Contact
                     </NavLink>
