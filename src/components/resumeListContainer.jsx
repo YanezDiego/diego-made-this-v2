@@ -19,7 +19,7 @@ const ResumeList = (props) => {
       tabIndex='0'
       className='bg-white rounded-lg shadow-sm p-3 hover:shadow-lg md:transform md:hover:-translate-y-1 md:hover:scale-105 md:transition md:duration-300'
     >
-      <h3 className='bold text-lg md:text-xl lg:text-2xl'>{employer}</h3>
+      <h3 className='bold text-center text-lg md:text-xl lg:text-2xl lg:text-left'>{employer}</h3>
       <div className='font-light pt-1'>
         <p className='pt-1 text-stone-400 text-base '>
           <span className='italic'>{position.trim()}</span>
