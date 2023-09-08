@@ -41,12 +41,12 @@ const ResumeList = (props) => {
 
 
 ResumeList.defaultProps = {
-  employer: '',
+  employer: "",
   isCurrent: false,
-  startDate: '',
-  endDate: '',
-  position: '',
-  companyDescription: '',
+  startDate: "",
+  endDate: "",
+  position: "",
+  achievements: "",
 };  
 
 export default ResumeList;
