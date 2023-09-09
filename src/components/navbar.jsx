@@ -30,11 +30,13 @@ const NavBar = () => {
             <div className='flex justify-between h-16'>
               <div className='flex-shrink-0 flex items-center'>
                 {/* Logo */}
-                <img
-                  className='h-8 md:h-10 lg:h-14 w-auto'
-                  src='./DY.png'
-                  alt='It is an image of diego logo. it is the initials of his name.'
-                />
+                <NavLink to='/' exact>
+                  <img
+                    className='h-8 md:h-10 lg:h-14 w-auto'
+                    src='./DY.png'
+                    alt='It is an image of diego logo. it is the initials of his name.'
+                  />
+                </NavLink>
               </div>
               <div className='hamburger-menu flex items-center'>
                 {/* Hamburger Menu */}
@@ -100,9 +102,8 @@ const NavBar = () => {
                   </li>
                   <li className='mb-1'>
                     <NavLink
-                      to='/about'
+                      to='/aboutme'
                       className='block p-4 text-base font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded'
-                      
                     >
                       About Me
                     </NavLink>
