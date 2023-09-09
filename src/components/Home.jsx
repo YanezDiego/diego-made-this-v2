@@ -24,10 +24,15 @@ const Home = () => {
     //   .catch(console.error);
 
     setJobList(resume);
-  }, []);
+    if(jobList){
+      localStorage.setItem("jobs", JSON.stringify(jobList));
+    }
+
+  }, [jobList]);
 
   return (
     <>
+
       <div className='flex items-start justify-center min-h-full md:min-h-[66vh] p-4 md:p-6 lg:p-16'>
         <div className='container mx-auto'>
           <div className='flex flex-col items-center text-center'>
