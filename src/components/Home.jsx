@@ -32,8 +32,7 @@ const Home = () => {
 
   return (
     <>
-
-      <div className='flex items-start justify-center min-h-full md:min-h-[66vh] p-4 md:p-6 lg:p-16'>
+      <div className='flex items-start justify-center  min-h-full md:min-h-[66vh] md:items-center p-4 md:p-6 lg:p-16'>
         <div className='container mx-auto'>
           <div className='flex flex-col items-center text-center'>
             <div className='title p-4'>
