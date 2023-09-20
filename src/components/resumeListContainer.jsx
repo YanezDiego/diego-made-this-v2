@@ -21,10 +21,10 @@ const ResumeList = (props) => {
     >
       <h3 className='bold text-center text-lg md:text-xl lg:text-2xl lg:text-left'>{employer}</h3>
       <div className='font-light pt-1'>
-        <p className='pt-1 text-stone-400 text-base '>
+        <p className='pt-1 text-stone-500 text-base '>
           <span className='italic'>{position.trim()}</span>
         </p>
-        <p className='py-1 text-base text-stone-400'>
+        <p className='py-1 text-base text-stone-500'>
           <span className='italic'>
             {isCurrent ? "Current" : `From ${workStart} to ${workEnd}`}
           </span>
