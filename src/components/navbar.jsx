@@ -94,7 +94,7 @@ const NavBar = () => {
                   <li className='mb-1'>
                     <NavLink
                       to='/'
-                      exact
+                      
                       className='block p-4 text-base font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded'
                     >
                       Home
