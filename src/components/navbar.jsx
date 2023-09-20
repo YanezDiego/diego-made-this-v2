@@ -108,14 +108,6 @@ const NavBar = () => {
                       About Me
                     </NavLink>
                   </li>
-                  <li className='mb-1'>
-                    <NavLink
-                      to='/contact'
-                      className='block p-4 text-base font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded'
-                    >
-                      Contact
-                    </NavLink>
-                  </li>
                 </ul>
               </div>
             </nav>
