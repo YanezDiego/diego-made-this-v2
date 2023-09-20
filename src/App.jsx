@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes} from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./components/home";
 import AboutMe from "./components/AboutMe";
-import Contact from "./components/Contact"
+
 
 
 const App = () => {
@@ -13,9 +13,10 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route Component={Home} path='/' exact />
-        <Route Component={AboutMe} path='/aboutme'/>
-        <Route Component={Contact} path='/contact'/>
+        <Route Component={AboutMe} path='/aboutme' />
+        
       </Routes>
+      <footer className="text-center p-8 text-sm " >© DiegoMadeThis With ♥.</footer>
     </BrowserRouter>
   );
 }
