@@ -1,0 +1,70 @@
+[
+    {
+        "employer": "CharityBuzz",
+        "position": "Freelance Full Stack Software Engineer",
+        "isCurrent": false,
+        "location": "Remote",
+        "companyDescription": "Charitybuzz is an online charity auction company that raises money for nonprofits through the sale of exclusive experiences and items.",
+        "startDate": "12/01/2022",
+        "endDate": "01/01/2023",
+        "slug": {
+            "current":"charitybuzz",
+            "_type":"slug"
+        },
+        "achievements": ["Enhanced website accessibility by implementing ARIA standards and optimizing for screen readers improving compliance by 80%."
+                        ,"Collaborated with cross-functional teams to identify and resolve issues leading to a 25% increase in efficiency."
+                        , "Spearheaded the development and implementation of user-friendly UI/UX solutions, leading to a 3% increase in user engagement."
+                        ]
+    },
+    {
+        "employer": "ArtsVision",
+        "position": "Developer / Implementation Engineer",
+        "isCurrent":false,
+        "location": "Remote",
+        "companyDescription": "ArtsVision provides artistic planning and management software for the performing arts. It's goals is to help companies with organizing all aspects of their operations.",
+        "startDate": "10/01/2019",
+        "endDate": "09/01/2022",
+        "slug": {
+            "current":"ArtsVision",
+            "_type":"slug"
+        },
+        "achievements": ["Streamlined customer data gathering and preparation processes by utilizing API endpoints and SQL queries for efficient data import reducing data import time by ~40%.",
+                         "Revolutionized reporting processes by automating SQL and LINQ-based reporting tools, saving the team over 50 hours annually.",
+                         "Forged strategic collaborations with the CEO and spearheaded my developer team in driving the creation of groundbreaking features that bolstered platform performance and user satisfaction.",
+                         "Architected and launched an innovative in-house data model form creation platform, streamlining workflows and exponentially boosting productivity by 20%"
+                        ]
+    },
+    {
+        "employer": "The Wally Shop",
+        "position": "Freelance Full Stack Software Engineer",
+        "isCurrent": false,
+        "location": "Remote",
+        "companyDescription": "The Wally Shop is a zero-waste grocery and home goods delivery service that brings customers their favorite products in all-reusable packaging.",
+        "startDate": "06/01/2019",
+        "endDate": "01/01/2020",
+        "slug": {
+            "current":"thewallyshop",
+            "_type":"slug"
+        },
+        "achievements": ["Engineered a robust back-end API using Node.js and MongoDB, automating stock level updates and email alerts for inventory management reducing the need to check stock by 60% manually.",
+                         "Pioneered the development of innovative end-to-end features front-end features using React and GraphQL and back-end using Node.js, resulting in a 2% increase in transactions and enhanced user experience.",
+                         "Orchestrated the seamless integration of a dynamic back-end function utilizing our vendor API, revolutionizing the finance team's workflow by automating end-of-day emails and skyrocketing efficiency by 35%."
+                        ]
+    },
+    {
+        "employer": "Flatiron School/WeWork",
+        "position": "Technical Coach",
+        "isCurrent": false,
+        "location": "Remote",
+        "companyDescription": "Flatiron School is a tech school that offers immersive, full-time programs in software engineering, data science, cybersecurity, and product design",
+        "startDate": "09/01/2018",
+        "endDate": "02/01/2020",
+        "slug": {
+            "current":"flatironschool",
+            "_type":"slug"
+        },
+        "achievements": ["Assisted students with debugging and code review in paired programming sessions.",
+                         "Contributed to the development of a comprehensive online student curriculum."
+                        ]
+    }
+]
