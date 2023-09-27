@@ -3,49 +3,49 @@ import { Modal } from "flowbite-react";
 //import { useState } from "react";
 
 const JobInfoModal = (props) => {
+    const {
+      employer,
+      isCurrent,
+      startDate,
+      endDate,
+      position,
+      achievements,
+      companyDescription,
+    } = props.job;
 
- 
+      let workStart = new Date(startDate).getFullYear();
+      let workEnd = new Date(endDate).getFullYear();
 
- 
+    
+  
 
-// const { employer, isCurrent, startDate, endDate, position, achievements } = props.job;
-
-
- 
-
- return (
-   <>
-     <Modal
-       dismissible
-       show={props.openModal}
-       onClick={props.closeModal}
-     >
-       <Modal.Header>Terms of Service</Modal.Header>
-       <Modal.Body>
-         <div className='space-y-6'>
-           <p className='text-base leading-relaxed text-gray-500 dark:text-gray-400'>
-             With less than a month to go before the European Union enacts new
-             consumer privacy laws for its citizens, companies around the world
-             are updating their terms of service agreements to comply.
-           </p>
-           <p className='text-base leading-relaxed text-gray-500 dark:text-gray-400'>
-             The European Union’s General Data Protection Regulation (G.D.P.R.)
-             goes into effect on May 25 and is meant to ensure a common set of
-             data rights in the European Union. It requires organizations to
-             notify users as soon as possible of high-risk data breaches that
-             could personally affect them.
-           </p>
-         </div>
-       </Modal.Body>
-       <Modal.Footer>
-         <button onClick={props.closeModal}>I accept</button>
-         <button color='gray' onClick={props.closeModal}>
-           Decline
-         </button>
-       </Modal.Footer>
-     </Modal>
-   </>
- ); //closing return
+    return (
+      <>
+        <Modal dismissible show={props.openModal} onClick={props.closeModal}>
+          <Modal.Header>{employer}</Modal.Header>
+          <Modal.Body>
+            <div className='space-y-6'>
+              <p className='text-base leading-relaxed text-gray-500 dark:text-gray-400'>
+                <span className='italic'>{position.trim()}</span>
+              </p>
+              <p className='text-base leading-relaxed text-gray-500 dark:text-gray-400'>
+                {companyDescription}
+              </p>
+              <ol className='list-disc list-inside'>
+                {achievements.map((achievement, index) => (
+                  <li className='text-base' key={index}>
+                    {achievement}
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </Modal.Body>
+          <Modal.Footer>
+            <button onClick={props.closeModal}>Close</button>
+          </Modal.Footer>
+        </Modal>
+      </>
+    ); //closing return
 };
 
 export default JobInfoModal;
