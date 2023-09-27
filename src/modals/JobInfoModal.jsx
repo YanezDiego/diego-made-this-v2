@@ -5,16 +5,16 @@ import { Modal } from "flowbite-react";
 const JobInfoModal = (props) => {
     const {
       employer,
-      isCurrent,
-      startDate,
-      endDate,
+    //   isCurrent,
+    //   startDate,
+    //   endDate,
       position,
       achievements,
       companyDescription,
     } = props.job;
 
-      let workStart = new Date(startDate).getFullYear();
-      let workEnd = new Date(endDate).getFullYear();
+    //   let workStart = new Date(startDate).getFullYear();
+    //   let workEnd = new Date(endDate).getFullYear();
 
     
   
