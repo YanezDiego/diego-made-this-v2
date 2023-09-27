@@ -1,35 +1,27 @@
-
 /* eslint-disable react/prop-types */
 import JobInfoModal from "../modals/JobInfoModal";
 import { useState } from "react";
 
 const ResumeList = (props) => {
- 
-  const {
-    employer,
-    isCurrent,
-    startDate,
-    endDate,
-    position,
-    achievements,
-  } = props.jobInfo;
+  const { employer, isCurrent, startDate, endDate, position, achievements } =
+    props.jobInfo;
 
- const [modalOpen, setModalOpen] = useState(null)
+  const [modalOpen, setModalOpen] = useState(null);
 
   let workStart = new Date(startDate).getFullYear();
   let workEnd = new Date(endDate).getFullYear();
-  
+
   const openModaClicks = () => {
     setModalOpen(true);
-    
   };
 
   const handleClose = () => {
-    setModalOpen(false)
-  }
+    setModalOpen(false);
+  };
 
-
-  console.log(`resume list container ${modalOpen}`);
+  const truncate = (str, maxLength = 40) => {
+  return str.length > maxLength ?  `${str.substring(0, maxLength)}.... learn more` : str
+  };
 
   return (
     <>
@@ -51,19 +43,23 @@ const ResumeList = (props) => {
             </span>
           </p>
           <ol className='list-disc list-inside'>
-            {achievements.map((achievement, index) => (
+            {/* {achievements.map((achievement, index) => (
               <li className='text-base' key={index}>
-                {achievement}
+                {truncate(achievement)}
               </li>
-            ))}
+            ))} */}
+            <li className='text-base'> {truncate(achievements[1])}</li>
           </ol>
         </div>
       </div>
-      <JobInfoModal job={props.jobInfo} openModal={modalOpen} closeModal={handleClose}/>
+      <JobInfoModal
+        job={props.jobInfo}
+        openModal={modalOpen}
+        closeModal={handleClose}
+      />
     </>
   );
 };
-
 
 ResumeList.defaultProps = {
   employer: "",
@@ -72,6 +68,6 @@ ResumeList.defaultProps = {
   endDate: "",
   position: "",
   achievements: "",
-};  
+};
 
 export default ResumeList;
