@@ -1,7 +1,10 @@
-/* eslint-disable react/prop-types */
 
+/* eslint-disable react/prop-types */
+import JobInfoModal from "../modals/JobInfoModal";
+import { useState } from "react";
 
 const ResumeList = (props) => {
+ 
   const {
     employer,
     isCurrent,
@@ -11,31 +14,53 @@ const ResumeList = (props) => {
     achievements,
   } = props.jobInfo;
 
+ const [modalOpen, setModalOpen] = useState(null)
+
   let workStart = new Date(startDate).getFullYear();
   let workEnd = new Date(endDate).getFullYear();
+  
+  const openModaClicks = () => {
+    setModalOpen(true);
+    
+  };
+
+  const handleClose = () => {
+    setModalOpen(false)
+  }
+
+
+  console.log(`resume list container ${modalOpen}`);
 
   return (
-    <div
-      tabIndex='0'
-      className='bg-white rounded-lg shadow-sm p-3 hover:shadow-lg md:transform md:hover:-translate-y-1 md:hover:scale-105 md:transition md:duration-300'
-    >
-      <h3 className='bold text-center text-lg md:text-xl lg:text-2xl lg:text-left'>{employer}</h3>
-      <div className='font-light pt-1'>
-        <p className='pt-1 text-stone-500 text-base '>
-          <span className='italic'>{position.trim()}</span>
-        </p>
-        <p className='py-1 text-base text-stone-500'>
-          <span className='italic'>
-            {isCurrent ? "Current" : `From ${workStart} to ${workEnd}`}
-          </span>
-        </p>
-        <ol className='list-disc list-inside'>
-          {achievements.map((achievement, index) => (
-            <li className='text-base' key={index}>{achievement}</li>
-          ))}
-        </ol>
+    <>
+      <div
+        tabIndex='0'
+        className='bg-white rounded-lg shadow-sm p-3 hover:shadow-lg md:transform md:hover:-translate-y-1 md:hover:scale-105 md:transition md:duration-300'
+        onClick={openModaClicks}
+      >
+        <h3 className='bold text-center text-lg md:text-xl lg:text-2xl lg:text-left'>
+          {employer}
+        </h3>
+        <div className='font-light pt-1'>
+          <p className='pt-1 text-stone-500 text-base '>
+            <span className='italic'>{position.trim()}</span>
+          </p>
+          <p className='py-1 text-base text-stone-500'>
+            <span className='italic'>
+              {isCurrent ? "Current" : `From ${workStart} to ${workEnd}`}
+            </span>
+          </p>
+          <ol className='list-disc list-inside'>
+            {achievements.map((achievement, index) => (
+              <li className='text-base' key={index}>
+                {achievement}
+              </li>
+            ))}
+          </ol>
+        </div>
       </div>
-    </div>
+      <JobInfoModal job={props.jobInfo} openModal={modalOpen} closeModal={handleClose}/>
+    </>
   );
 };
 
