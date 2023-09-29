@@ -11,9 +11,14 @@ node_modules
 dist
 dist-ssr
 *.local
+/.pnp
+.pnp.js
 
+package-lock.json
 .gitignore
-.package-lock.json
+.env
+gitignore
+
 
 # Editor directories and files
 .vscode/*
