@@ -45,7 +45,7 @@ const Home = () => {
                 I am an{" "}
                 <span className='underline'>
                   {" "}
-                  experienced Full Stack Software Engineer
+                  Full Stack Software Engineer
                 </span>{" "}
                 based in Brooklyn, NY.
               </p>
