@@ -48,7 +48,7 @@ const ResumeList = (props) => {
                 {truncate(achievement)}
               </li>
             ))} */}
-            <li className='text-base'> {truncate(achievements[1])}</li>
+            <li className='text-base'> {truncate(achievements[0])}</li>
           </ol>
         </div>
       </div>
