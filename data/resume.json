@@ -47,7 +47,7 @@
             "_type":"slug"
         },
         "achievements": ["Engineered a robust back-end API using Node.js and MongoDB, automating stock level updates and email alerts for inventory management reducing the need to check stock by 60% manually.",
-                         "Pioneered the development of innovative end-to-end features front-end features using React and GraphQL and back-end using Node.js, resulting in a 2% increase in transactions and enhanced user experience.",
+                         "Pioneered the development of innovative end-to-end features. using React, GraphQL, and Node.js, resulting in a 2% increase in transactions and enhanced user experience.",
                          "Orchestrated the seamless integration of a dynamic back-end function utilizing our vendor API, revolutionizing the finance team's workflow by automating end-of-day emails and skyrocketing efficiency by 35%."
                         ]
     },
