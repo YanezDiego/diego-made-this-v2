@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 //import { client } from "../../client";
 import ResumeList from "./ResumeListContainer";
+import ProjectListContainer from "./Projects/ProjectListContainer";
+
 import resume from "../../data/resume.json";
 const Home = () => {
   const [jobList, setJobList] = useState(null);
@@ -43,17 +45,14 @@ const Home = () => {
             <div className='intro font-light text-grey-00 text-lg md:text-xl lg:text-2xl'>
               <p>
                 I am an{" "}
-                <span className='underline'>
-                  {" "}
-                  Full Stack Software Engineer
-                </span>{" "}
+                <span className='underline'> Full Stack Software Engineer</span>{" "}
                 based in Brooklyn, NY.
               </p>
             </div>
           </div>
         </div>
       </div>
-
+      <ProjectListContainer/>
       <div className='flex-wrap mx-auto text-xl md:text-6xl lg:text-6xl'>
         <h2 className='text-center font-medium'>Past Experiences</h2>
 
