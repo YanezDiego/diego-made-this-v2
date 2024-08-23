@@ -1,7 +1,7 @@
 [
     {
         "employer": "CharityBuzz",
-        "position": "Freelance Full Stack Software Engineer",
+        "position": "Full Stack Software Engineer",
         "isCurrent": false,
         "location": "Remote",
         "companyDescription": "Charitybuzz is an online charity auction company that raises money for nonprofits through the sale of exclusive experiences and items.",
@@ -11,14 +11,14 @@
             "current":"charitybuzz",
             "_type":"slug"
         },
-        "achievements": ["Enhanced website accessibility by implementing ARIA standards and optimizing for screen readers improving compliance by 80%."
-                        ,"Collaborated with cross-functional teams to identify and resolve issues leading to a 25% increase in efficiency."
-                        , "Spearheaded the development and implementation of user-friendly UI/UX solutions, leading to a 3% increase in user engagement."
+        "achievements": ["Collaborated in the design, development, and implementation of a refreshed front end built with React. Worked cross-functionally with the UI/UX design team, and Product team to develop user-friendly solutions, and implement those changes as reusable React components, leading to a 3% increase in user engagement donation bids."
+                        ,"Proficient in understanding Monolithic architecture, identifying and enhancing areas where ARIA standards need implementation or improvement, utilizing Devtools and React Devtools, and Improving compliance by 80%."
+                        , "Utilized screen readers, including the Aria DevTools Chrome extension, to identify and rectify missing or misused keyboard support. Bringing ADA compliance up by over 90% and reaching a broader audience which lead to a higher inflow of user interaction and bidding."
                         ]
     },
     {
         "employer": "ArtsVision",
-        "position": "Developer / Implementation Engineer",
+        "position": "Javascript Developer/ Implementation Engineer",
         "isCurrent":false,
         "location": "Remote",
         "companyDescription": "ArtsVision provides artistic planning and management software for the performing arts. It's goals is to help companies with organizing all aspects of their operations.",
@@ -28,15 +28,16 @@
             "current":"ArtsVision",
             "_type":"slug"
         },
-        "achievements": ["Streamlined customer data gathering and preparation processes by utilizing API endpoints and SQL queries for efficient data import reducing data import time by ~40%.",
-                         "Revolutionized reporting processes by automating SQL and LINQ-based reporting tools, saving the team over 50 hours annually.",
-                         "Forged strategic collaborations with the CEO and spearheaded my developer team in driving the creation of groundbreaking features that bolstered platform performance and user satisfaction.",
-                         "Architected and launched an innovative in-house data model form creation platform, streamlining workflows and exponentially boosting productivity by 20%"
+        "achievements": ["Played a key role in the design and implementation of two new microservices for the hiring team which made it easier to onboard new artists by supplying key information to a React front end the backend endpoint would create a WordDoc using LINQ to create any document needed and email it to said artist thus saving hours in the onboarding process.",
+                         "Identified and implemented reusable SQL Server functions and LINQ (Language Integrated Query) to automate data gathering for reporting, this helped my team save over 10 hours annually.",
+                         "Partnered with the lead Engineer in finding and debugging back-end and front-end features using logs and JIRA tickets this led to finding and fixing issues about 2% faster than before.",
+                         "Utilized Postman to test API endpoints and preview JSON data, ensuring seamless integration of client data into our SQL Server database. This reduced import times by ~ 20%.",
+                         "Led the migration of one of our services from Jquery to React.Js. Which led to a more harmonious application that made it easier to debug."
                         ]
     },
     {
         "employer": "The Wally Shop",
-        "position": "Freelance Full Stack Software Engineer",
+        "position": "Full Stack Software Engineer",
         "isCurrent": false,
         "location": "Remote",
         "companyDescription": "The Wally Shop is a zero-waste grocery and home goods delivery service that brings customers their favorite products in all-reusable packaging.",
@@ -46,14 +47,15 @@
             "current":"thewallyshop",
             "_type":"slug"
         },
-        "achievements": ["Engineered a robust back-end API using Node.js and MongoDB, automating stock level updates and email alerts for inventory management reducing the need to check stock by 60% manually.",
-                         "Pioneered the development of innovative end-to-end features. using React, GraphQL, and Node.js, resulting in a 2% increase in transactions and enhanced user experience.",
-                         "Orchestrated the seamless integration of a dynamic back-end function utilizing our vendor API, revolutionizing the finance team's workflow by automating end-of-day emails and skyrocketing efficiency by 35%."
+        "achievements": ["Led the front-end development of an in-house microservice using React.js for the shopping team. This helped our shopping team get authenticated as an employee, assign shopping lists, and keep track of what items they were able to acquire or change. This helped us be more up-to-date with real live updates on what was going on instead of relying on emails and texts.",
+                         "Participated in designing and implementing a Node.js and Express.js backend feature, which used 3rd Party APIs to gather information from an AWS S3 bucket. This would query and update our MongoDB inventory table based on the information gathered.",
+                         "Analysis: Application development & setup, understanding existing code, business rules & its implementation throughout Sprint.",
+                         "Implemented a back-end function that would generate a financial email. It would query our database (MongoDB), and use Pug.js for templating. This automation saved the finance team approximately 2 to 3 hours a day."
                         ]
     },
     {
         "employer": "Flatiron School/WeWork",
-        "position": "Technical Coach",
+        "position": "Software Engineer Technical Coach",
         "isCurrent": false,
         "location": "Remote",
         "companyDescription": "Flatiron School is a tech school that offers immersive, full-time programs in software engineering, data science, cybersecurity, and product design",
@@ -63,8 +65,10 @@
             "current":"flatironschool",
             "_type":"slug"
         },
-        "achievements": ["Assisted students with debugging and code review in paired programming sessions.",
-                         "Contributed to the development of a comprehensive online student curriculum."
+        "achievements": ["Employed Socratic teaching methods in pair programming sessions, guiding students to discover answers independently.",
+                         "Assisted students in debugging across various curriculum levels, covering topics such as Object-Oriented Programming, Ruby, Ruby on Rails, and React.js.",
+                         "Created real-world scenarios with code reviews and versioning control (Github) during end-of-section projects and final portfolio projects.",
+                         "Participated in the development, implementation, and updating of topics, chapters, or parts of the curriculum."
                         ]
     }
 ]
