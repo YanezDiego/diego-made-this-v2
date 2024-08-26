@@ -2,10 +2,10 @@
     {
     "id": 1,
     "projectName": "Potable",
-    "url": "potable.app",
+    "url": "https://www.potable.app",
     "isLive": true,
+    "beta": true,
     "appDescription": "Potable is a web app that helps users find clean drinking water sources near them.",
     "techStack": ["React", "Redux", "PostgreSQL", "Google API", "Mapbox API"]
-    
     }
 ]
